@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sekolah_flutter_github/ui/gavra_page/gavra_page.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({super.key});
@@ -35,9 +36,7 @@ class _HomePageState extends State<HomePage>
       body: TabBarView(
         controller: _tabController,
         children: [
-          Center(
-            child: Text("Gavra"),
-          ),
+          GavraPage(),
           Center(
             child: Text("Firdan"),
           ),
